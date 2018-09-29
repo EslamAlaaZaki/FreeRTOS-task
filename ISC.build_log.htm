@@ -1,0 +1,382 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\SelectionTaskISC\ISC.uvproj
+Project File Date:  07/14/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+.\FreeRTOSConfig.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+main.c(152): warning:  #111-D: statement is unreachable
+        return 0;
+main.c(139): warning:  #177-D: variable "First_handle" was declared but never referenced
+      TaskHandle_t  First_handle,Second_handle;
+main.c(139): warning:  #177-D: variable "Second_handle" was declared but never referenced
+      TaskHandle_t  First_handle,Second_handle;
+main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=17672 RO-data=32 RW-data=108 ZI-data=4692  
+".\ISC.axf" - 0 Error(s), 4 Warning(s).
+Load "E:\\SelectionTaskISC\\ISC.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "E:\\SelectionTaskISC\\ISC.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+Load "E:\\SelectionTaskISC\\ISC.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.
+_In_Out(0x11111111,0xFFFFFFFF,true);
+main.c(140): warning:  #111-D: statement is unreachable
+        return 0;
+main.c: 2 warnings, 8 errors
+".\ISC.axf" - 8 Error(s), 2 Warning(s).
+Target not created
+ errors
+compiling heap_1.c...
+.\FreeRTOSConfig.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif /* FREERTOS_CONFIG_H */
+FreeRTOS\Source\portable\MemMang\heap_1.c: 1 warning, 0 errors
+linking...
+.\ISC.axf: Error: L6218E: Undefined symbol SystemCoreClock (referred from port.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\ISC.axf" - 1 Error(s), 8 Warning(s).
+Target not created
+ Error(s), 8 Warning(s).
+Target not created
+rce\queue.c(251): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(251): error:  #20: identifier "x" is undefined
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(251): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(306): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(306): error:  #20: identifier "x" is undefined
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(306): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(310): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( pxStaticQueue != NULL );
+FreeRTOS\Source\queue.c(314): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( !( ( pucQueueStorage != NULL ) && ( uxItemSize == 0 ) ) );
+FreeRTOS\Source\queue.c(315): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( !( ( pucQueueStorage == NULL ) && ( uxItemSize != 0 ) ) );
+FreeRTOS\Source\queue.c(323): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( xSize == sizeof( Queue_t ) );
+FreeRTOS\Source\queue.c(364): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(364): error:  #20: identifier "x" is undefined
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(364): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+FreeRTOS\Source\queue.c(731): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(731): error:  #20: identifier "x" is undefined
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(731): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(732): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+FreeRTOS\Source\queue.c(733): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+FreeRTOS\Source\queue.c(736): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+FreeRTOS\Source\queue.c(929): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(929): error:  #20: identifier "x" is undefined
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(929): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(930): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+FreeRTOS\Source\queue.c(931): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+FreeRTOS\Source\queue.c(1086): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(1086): error:  #20: identifier "x" is undefined
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(1086): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( pxQueue );
+FreeRTOS\Source\queue.c(1090): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pxQueue->uxItemSize == 0 );
+FreeRTOS\Source\queue.c(1095): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->pxMutexHolder != NULL ) ) );
+FreeRTOS\Source\queue.c(1246): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( ( pxQueue ) );
+FreeRTOS\Source\queue.c(1246): error:  #20: identifier "x" is undefined
+        configASSERT( ( pxQueue ) );
+FreeRTOS\Source\queue.c(1246): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( ( pxQueue ) );
+FreeRTOS\Source\queue.c(1250): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+FreeRTOS\Source\queue.c(1255): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+FreeRTOS\Source\queue.c: 7 warnings, 30 errors
+compiling tasks.c...
+.\FreeRTOS\Source\include\FreeRTOSConfig.h(68): error:  #40: expected an identifier
+  #define configASSERT( ( x ) ) if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(180): error:  #29: expected an expression
+  uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(207): error:  #29: expected an expression
+  uint32_t ulReturn, ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+FreeRTOS\Source\tasks.c(592): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( puxStackBuffer != NULL );
+FreeRTOS\Source\tasks.c(592): error:  #20: identifier "x" is undefined
+                configASSERT( puxStackBuffer != NULL );
+FreeRTOS\Source\tasks.c(592): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( puxStackBuffer != NULL );
+FreeRTOS\Source\tasks.c(593): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( pxTaskBuffer != NULL );
+FreeRTOS\Source\tasks.c(601): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( xSize == sizeof( TCB_t ) );
+FreeRTOS\Source\tasks.c(867): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+FreeRTOS\Source\tasks.c(867): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+FreeRTOS\Source\tasks.c(1189): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1189): error:  #20: identifier "x" is undefined
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1189): warning:  #223-D: function "vAssertCalled" declared implicitly
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1209): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( pxPreviousWakeTime );
+FreeRTOS\Source\tasks.c(1209): error:  #20: identifier "x" is undefined
+                configASSERT( pxPreviousWakeTime );
+FreeRTOS\Source\tasks.c(1209): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( pxPreviousWakeTime );
+FreeRTOS\Source\tasks.c(1210): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ( xTimeIncrement > 0U ) );
+FreeRTOS\Source\tasks.c(1211): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1295): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1295): error:  #20: identifier "x" is undefined
+                        configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1295): warning:  #223-D: function "vAssertCalled" declared implicitly
+                        configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1472): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ( uxNewPriority < configMAX_PRIORITIES ) );
+FreeRTOS\Source\tasks.c(1472): error:  #20: identifier "x" is undefined
+                configASSERT( ( uxNewPriority < configMAX_PRIORITIES ) );
+FreeRTOS\Source\tasks.c(1472): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( ( uxNewPriority < configMAX_PRIORITIES ) );
+FreeRTOS\Source\tasks.c(1698): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1698): error:  #20: identifier "x" is undefined
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1698): warning:  #223-D: function "vAssertCalled" declared implicitly
+                                configASSERT( uxSchedulerSuspended == 0 );
+FreeRTOS\Source\tasks.c(1740): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( xTask );
+FreeRTOS\Source\tasks.c(1740): error:  #20: identifier "x" is undefined
+                configASSERT( xTask );
+FreeRTOS\Source\tasks.c(1740): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( xTask );
+FreeRTOS\Source\tasks.c(1782): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(1782): error:  #20: identifier "x" is undefined
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(1782): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(1837): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(1837): error:  #20: identifier "x" is undefined
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(1837): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( xTaskToResume );
+FreeRTOS\Source\tasks.c(2012): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+FreeRTOS\Source\tasks.c(2012): error:  #20: identifier "x" is undefined
+                configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+FreeRTOS\Source\tasks.c(2012): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+FreeRTOS\Source\tasks.c(2112): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( uxSchedulerSuspended );
+FreeRTOS\Source\tasks.c(2112): error:  #20: identifier "x" is undefined
+        configASSERT( uxSchedulerSuspended );
+FreeRTOS\Source\tasks.c: 11 warnings, 30 errors
+compiling timers.c...
+.\FreeRTOS\Source\include\FreeRTOSConfig.h(68): error:  #40: expected an identifier
+  #define configASSERT( ( x ) ) if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(180): error:  #29: expected an expression
+  uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(207): error:  #29: expected an expression
+  uint32_t ulReturn, ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+FreeRTOS\Source\timers.c(271): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xReturn );
+FreeRTOS\Source\timers.c(271): error:  #20: identifier "x" is undefined
+        configASSERT( xReturn );
+FreeRTOS\Source\timers.c(271): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( xReturn );
+FreeRTOS\Source\timers.c(325): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( xSize == sizeof( Timer_t ) );
+FreeRTOS\Source\timers.c(325): error:  #20: identifier "x" is undefined
+                        configASSERT( xSize == sizeof( Timer_t ) );
+FreeRTOS\Source\timers.c(325): warning:  #223-D: function "vAssertCalled" declared implicitly
+                        configASSERT( xSize == sizeof( Timer_t ) );
+FreeRTOS\Source\timers.c(330): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( pxTimerBuffer );
+FreeRTOS\Source\timers.c(330): error:  #20: identifier "x" is undefined
+                configASSERT( pxTimerBuffer );
+FreeRTOS\Source\timers.c(330): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( pxTimerBuffer );
+FreeRTOS\Source\timers.c(360): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(360): error:  #20: identifier "x" is undefined
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(360): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(386): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(386): error:  #20: identifier "x" is undefined
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(386): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(428): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+FreeRTOS\Source\timers.c(428): error:  #20: identifier "x" is undefined
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+FreeRTOS\Source\timers.c(428): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+FreeRTOS\Source\timers.c(437): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(437): error:  #20: identifier "x" is undefined
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(437): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(447): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(447): error:  #20: identifier "x" is undefined
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(447): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(457): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(457): error:  #20: identifier "x" is undefined
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(457): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c(484): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(484): error:  #20: identifier "x" is undefined
+                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(484): warning:  #223-D: function "vAssertCalled" declared implicitly
+                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(765): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                                                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(765): error:  #20: identifier "x" is undefined
+                                                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(765): warning:  #223-D: function "vAssertCalled" declared implicitly
+                                                        configASSERT( xResult );
+FreeRTOS\Source\timers.c(788): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(788): error:  #20: identifier "x" is undefined
+                                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(788): warning:  #223-D: function "vAssertCalled" declared implicitly
+                                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+FreeRTOS\Source\timers.c(878): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                                configASSERT( xResult );
+FreeRTOS\Source\timers.c(878): error:  #20: identifier "x" is undefined
+                                configASSERT( xResult );
+FreeRTOS\Source\timers.c(878): warning:  #223-D: function "vAssertCalled" declared implicitly
+                                configASSERT( xResult );
+FreeRTOS\Source\timers.c(950): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( xTimer );
+FreeRTOS\Source\timers.c: 13 warnings, 30 errors
+compiling port.c...
+.\FreeRTOS\Source\include\FreeRTOSConfig.h(68): error:  #40: expected an identifier
+  #define configASSERT( ( x ) ) if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(180): error:  #29: expected an expression
+  uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(207): error:  #29: expected an expression
+  uint32_t ulReturn, ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(40): error:  #29: expected an expression
+  #if configMAX_SYSCALL_INTERRUPT_PRIORITY == 0
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(229): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( uxCriticalNesting == ~0UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(229): error:  #20: identifier "x" is undefined
+        configASSERT( uxCriticalNesting == ~0UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(229): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( uxCriticalNesting == ~0UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(304): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(304): error:  #20: identifier "x" is undefined
+        configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(304): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(309): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(310): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(335): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ucMaxPriorityValue == ( configKERNEL_INTERRUPT_PRIORITY & ucMaxPriorityValue ) );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(338): error:  #29: expected an expression
+                ucMaxSysCallPriority = configMAX_SYSCALL_INTERRUPT_PRIORITY & ucMaxPriorityValue;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(379): error:  #29: expected an expression
+        portNVIC_SYSPRI2_REG |= portNVIC_PENDSV_PRI;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(380): error:  #29: expected an expression
+        portNVIC_SYSPRI2_REG |= portNVIC_SYSTICK_PRI;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(407): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( uxCriticalNesting == 1000UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(407): error:  #20: identifier "x" is undefined
+        configASSERT( uxCriticalNesting == 1000UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(407): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( uxCriticalNesting == 1000UL );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(423): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(423): error:  #20: identifier "x" is undefined
+                configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(423): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(430): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( uxCriticalNesting );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(430): error:  #20: identifier "x" is undefined
+        configASSERT( uxCriticalNesting );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(430): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( uxCriticalNesting );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(767): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                        configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(767): error:  #20: identifier "x" is undefined
+                        configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(767): warning:  #223-D: function "vAssertCalled" declared implicitly
+                        configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(783): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+                configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(783): error:  #20: identifier "x" is undefined
+                configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(783): warning:  #223-D: function "vAssertCalled" declared implicitly
+                configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(733): warning:  #550-D: variable "ucCurrentPriority" was set but never used
+        uint8_t ucCurrentPriority;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c(181): warning:  #550-D: variable "ucMaxSysCallPriority" was set but never used
+         static uint8_t ucMaxSysCallPriority = 0;
+FreeRTOS\Source\portable\RVDS\ARM_CM4F\port.c: 9 warnings, 24 errors
+compiling heap_1.c...
+.\FreeRTOS\Source\include\FreeRTOSConfig.h(68): error:  #40: expected an identifier
+  #define configASSERT( ( x ) ) if( ( x ) == 0 ) vAssertCalled( __FILE__, __LINE__ )
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(180): error:  #29: expected an expression
+  uint32_t ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h(207): error:  #29: expected an expression
+  uint32_t ulReturn, ulNewBASEPRI = configMAX_SYSCALL_INTERRUPT_PRIORITY;
+FreeRTOS\Source\portable\MemMang\heap_1.c(130): error:  #55-D: too many arguments in invocation of macro "configASSERT"
+        configASSERT( pv == NULL );
+FreeRTOS\Source\portable\MemMang\heap_1.c(130): error:  #20: identifier "x" is undefined
+        configASSERT( pv == NULL );
+FreeRTOS\Source\portable\MemMang\heap_1.c(130): warning:  #223-D: function "vAssertCalled" declared implicitly
+        configASSERT( pv == NULL );
+FreeRTOS\Source\portable\MemMang\heap_1.c: 1 warning, 5 errors
+".\ISC.axf" - 125 Error(s), 42 Warning(s).
+Target not created
